@@ -37,7 +37,7 @@ Mobile View
 ### Links
 
 - Solution URL: [My Solution](https://github.com/BANKOLEDO/product-preview-card-component-main)
-- Live Site URL: [Page Preview](https://your-live-site-url.com)
+- Live Site URL: [Page Preview](https://bankoledo.github.io/product-preview-card-component-main/)
 
 ## My process
 
