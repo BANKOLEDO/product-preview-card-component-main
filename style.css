@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Color */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    /* Neutral Color */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.entire-page {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cream);
+}
+
+.container {
+    width: 90%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem 3rem 1rem;
+    border-radius: 1rem;
+}
+
+.page-img {
+    width: 100%;
+    height: 19rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.small-heading {
+    text-transform: uppercase;
+    font-family:  Montserrat, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    font-size: 15px;
+    color: var(--dark-grayish-blue);
+    margin: 1rem 0 1rem 1.4rem;
+}
+
+.large-heading {
+    font-size: 2.24rem;
+    line-height: 2.5rem;
+    font-family: Fraunces;
+    margin: 2rem 1rem 1rem 1.4rem;
+    color: var(--very-dark-blue);
+}
+
+.details {
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    margin: 2rem 1rem 2rem 1.4rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.discount {
+    color: var(--dark-cyan);
+    font-family: Fraunces;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0 1.4rem 0 1.4rem;
+}
+
+.main-price {
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.center-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1.4rem;
+}
+
+.btn {
+    margin: 2rem 0;
+    width: 90%;
+    padding: 1.3rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--dark-cyan);
+}
+
+button:hover {
+    cursor: pointer;
+}
+.cart {
+    width: 1.4rem;
+}
+.btn a {
+    color: var(--white);
+    font-family: Montserrat;
+    font-weight: 800;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 700px) {
+    .entire-page {
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .page-img {
+        border-radius: 1rem 0 0 1rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-container {
+        width: 50%;
+    }
+
+    .text-container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1060px) {
+    .entire-page {
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width: 50%;
+        flex-direction: row;
+    }
+
+    .page-img {
+        border-radius: 1rem 0 0 1rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-container {
+        width: 50%;
+    }
+
+    .text-container {
+        width: 50%;
+    }
+}
